@@ -1,0 +1,119 @@
+@media only screen and (max-width: 999px) {
+    h1 {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 10vh;
+        object-fit: contain;
+        background-color: #ADD8E6;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-bottom: 40px;
+        padding-left: -10px;
+        padding-right: -5px;
+    }
+
+
+    p {
+        padding-bottom: 30px;
+        /* font-family: 'Roboto Slab', serif; */
+        /* font-family: 'gill sans', serif; */
+        font-family: 'Courier New', monospace;
+        /* font-family: 'source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif'; */
+        /* font-family: 'Montserrat Light', sans-serif; */
+        font-size: 20px;
+        /* color: rgba(41, 41, 41, 1);
+        font-style: normal;
+        word-break: break-word;
+        font-weight: 300;
+        box-sizing: inherit;
+        letter-spacing: 3px; */
+        /* color: #333;
+        font-weight: 200; */
+    }
+
+    body {
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    img {
+        margin: auto;
+        /* Set margin to auto on all sides */
+        max-width: 100%;
+        /* Ensure the image does not overflow its container */
+        max-height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        /* Set a height for the container */
+        object-fit: contain;
+    }
+    h1 {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 10vh;
+        object-fit: contain;
+        background-color: #ADD8E6;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 45px;
+        padding-bottom: 1px;
+    }
+
+    h3 {
+        font-size: 25px;
+        padding-bottom: 1px;
+    }
+
+    p {
+        padding-bottom: 20px;
+        /* font-family: 'Roboto Slab', serif; */
+        /* font-family: 'gill sans', serif; */
+        font-family: 'Courier New', monospace;
+        /* font-family: 'source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif'; */
+        /* font-family: 'Montserrat Light', sans-serif; */
+        font-size: 20px;
+        /* color: rgba(41, 41, 41, 1);
+        font-style: normal;
+        word-break: break-word;
+        font-weight: 300;
+        box-sizing: inherit;
+        letter-spacing: 3px; */
+        /* color: #333;
+        font-weight: 200; */
+    }
+
+    body {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!-- Array of objects -->
+	<script>
+        let data = {"title":"Healthy eating and nutrition advice","divArray":[{"tag":"h1","text":"Healthy eating and nutrition advice"},{"tag":"img","src":"../images/2.jpeg","alt":"My image"},{"tag":"p","text":"Healthy eating and proper nutrition are essential for maintaining good health and preventing chronic diseases such as heart disease, diabetes, and obesity. In this blog post, we will explore the importance of healthy eating and provide some useful nutrition advice for maintaining a healthy and balanced diet."},{"tag":"h2","text":"Why is healthy eating important?"},{"tag":"p","text":"Healthy eating provides your body with the essential nutrients it needs to function properly. A diet that is rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help reduce the risk of chronic diseases, promote healthy weight management, and improve overall well-being."},{"tag":"h2","text":"Here are some benefits of healthy eating:"},{"tag":"p","text":"Reduces the risk of chronic diseases: A diet that is rich in nutrients can help reduce the risk of chronic diseases such as heart disease, stroke, and diabetes.<br></br>Promotes healthy weight management: A healthy and balanced diet can help you maintain a healthy weight and reduce the risk of obesity.<br></br>Improves mental health: Eating a nutritious diet can help improve your mood, reduce stress, and promote mental well-being.<br></br>Boosts energy levels: Eating a balanced diet that is rich in nutrients can help increase your energy levels and improve your overall productivity.<br></br>Improves overall well-being: A healthy diet can help improve your overall health and well-being by providing your body with the nutrients it needs to function properly."},{"tag":"h2","text":"Nutrition advice for healthy eating"},{"tag":"h3","text":"Eat a variety of foods"},{"tag":"p","text":"Eating a variety of foods ensures that you are getting all the essential nutrients your body needs. A healthy diet should include a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Try to include foods from all food groups in your diet."},{"tag":"h3","text":"Limit processed foods"},{"tag":"p","text":"Processed foods are often high in calories, unhealthy fats, and added sugars. They also lack essential nutrients that your body needs. Try to limit your intake of processed foods and opt for whole foods instead."},{"tag":"h3","text":"Reduce salt intake"},{"tag":"p","text":"High salt intake is linked to an increased risk of high blood pressure, heart disease, and stroke. Try to reduce your salt intake by avoiding processed foods, using herbs and spices to flavor your food, and not adding salt to your meals."},{"tag":"h3","text":"Limit sugar intake"},{"tag":"p","text":"Consuming too much sugar can lead to weight gain, dental problems, and an increased risk of chronic diseases. Try to limit your intake of sugary drinks and snacks and opt for healthier alternatives such as fruits, vegetables, and whole grains."},{"tag":"h3","text":"Stay hydrated"},{"tag":"p","text":"Drinking plenty of water is essential for good health. It helps to flush toxins from your body, regulate body temperature, and maintain proper bodily functions. Aim to drink at least 8 glasses of water per day."},{"tag":"h3","text":"Don't skip meals"},{"tag":"p","text":"Skipping meals can lead to overeating and poor food choices. Try to eat small, frequent meals throughout the day to keep your metabolism up and prevent overeating."},{"tag":"h3","text":"Practice mindful eating"},{"tag":"p","text":"Mindful eating involves paying attention to the food you are eating and being present in the moment. It can help you to recognize when you are full and prevent overeating. Try to eat slowly, chew your food thoroughly, and avoid distractions while eating."},{"tag":"h2","text":"Conclusion"},{"tag":"p","text":"In conclusion, healthy eating and proper nutrition are essential for maintaining good health and preventing chronic diseases. Eating a variety of foods, limiting processed foods, reducing salt and sugar intake, staying hydrated, not skipping meals, and practicing mindful eating can all help you to maintain a healthy and balanced diet. By following these nutrition tips, you can improve your overall health and well-being."}]};
+		divArray = data.divArray
+		document.title = data.title
+		document.write(`<header>
+        					<img src="../images/logo/mobile1.png" alt="Logo">
+      					</header>`);
+
+		for (var i = 0; i < divArray.length; i++) {
+			var tag = divArray[i].tag;
+			var text = divArray[i].text;
+			var src = divArray[i].src;
+            var style = divArray[i].style;
+			var alt = divArray[i].alt;
+
+			if (tag === "h1") {
+				document.write(`<h1 ">${text}</h1>`);
+			} else if (tag === "h2") {
+				document.write(`<h2 ">${text}</h2>`);
+			} else if (tag === "h3") {
+				document.write(`<h3 ">${text}</h3>`);
+			} else if (tag === "p") {
+				document.write("<p>" + text + "</p>");
+			} else if (tag === "img") {
+				document.write(`<img src="${src}" alt="${alt}" />`);
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -13,9 +13,9 @@
 		divArray = data.divArray
 		document.title = data.title
 		document.write(`<header>
-        					<img src="../images/logo/mobile1.png" alt="Logo">
+        					<img src="../images/logo2/logo3.png" alt="Logo" id="header-image">
       					</header>`);
-
+		document.write(`<div id="container">`);
 		for (var i = 0; i < divArray.length; i++) {
 			var tag = divArray[i].tag;
 			var text = divArray[i].text;
@@ -32,9 +32,10 @@
 			} else if (tag === "p") {
 				document.write("<p>" + text + "</p>");
 			} else if (tag === "img") {
-				document.write(`<img src="${src}" alt="${alt}" />`);
+				document.write(`<img src="${src}" alt="${alt}" id="image"/>`);
 			}
 		}
+		document.write(`</div>`);
 	</script>
 
 </body>

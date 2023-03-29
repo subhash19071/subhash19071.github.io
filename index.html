@@ -1,14 +1,48 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Blogs Corner</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+  <head>
+    <title>Blogs Corner</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
     <header>
-        <img src="images/logo/mobile1.png" alt="Logo">
-      </header>
-      <h1>Welcome to Blogs Corner, We are working hard to full you with amazing knowledge.</h1>
-
-</body>
+      <img src="images/logo2/logo3.png" alt="Logo" id="header-image">
+    </header>
+    <p>Welcome to our blog, a platform where you can explore a diverse range of articles spanning across various categories such as lifestyle, technology, entertainment, and more. Our team of experienced writers brings you insightful analysis, trending news, and fresh perspectives on topics that matter.</p>
+    <div class="box-container">
+      <!-- Example array of items -->
+      <script>
+        var items = [
+          {"title": "Top 10 ways to earn money online", "image": "images/1.jpeg", "link": "/finance/top-10-ways-to-earn-money-online"},
+          {"title": "Healthy eating and nutrition advice", "image": "images/2.jpeg", "link": "/health/healthy-eating-and-nutrition-advice"}
+        ];
+        
+        // Loop through the array and create a box with a link for each item
+        for (var i = 0; i < items.length; i++) {
+          var box = document.createElement("div");
+          box.className = "box";
+          
+          var link = document.createElement("a");
+          link.href = items[i].link;
+          link.className = "box-link";
+          
+          var image = document.createElement("img");
+          image.src = items[i].image;
+          image.alt = items[i].title;
+          
+          var title = document.createElement("h2");
+          title.innerHTML = items[i].title;
+          
+          link.appendChild(image);
+          link.appendChild(title);
+          
+          box.appendChild(link);
+          
+          document.querySelector(".box-container").appendChild(box);
+        }
+      </script>
+    </div>
+  </body>
 </html>
